@@ -41,7 +41,7 @@ The Task List Application is a simple and responsive task management tool that a
    ```
 2. Navigate to the project directory:
    ```bash
-   cd task-list-app
+   cd Phantom-Intern-Assignment
    ```
 3. Install dependencies:
    ```bash
