@@ -37,11 +37,11 @@ The Task List Application is a simple and responsive task management tool that a
 #### Steps:
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-repo/task-list-app.git
+   git clone https://github.com/manvendra9752/Phantom-Intern-Assignment.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd task-list-app
+   cd Phantom-Intern-Assignment
    ```
 3. Install dependencies:
    ```bash
