@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Stylish Scrollbar */
+/* Stylish Scrollbar */
+.stylish-scrollbar::-webkit-scrollbar {
+  width: 4px; /* Width of the scrollbar */
+}
+
+.stylish-scrollbar::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    to bottom,
+    #4ade80,
+    #3b82f6
+  ); /* Gradient for the scrollbar thumb */
+  border-radius: 4px; /* Rounded corners */
+  transition: background 0.3s ease;
+}
+
+.stylish-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    to bottom,
+    #3b82f6,
+    #9333ea
+  ); /* Hover effect for the scrollbar thumb */
+}
+
+.stylish-scrollbar::-webkit-scrollbar-track {
+  background: #f3f4f6; /* Background of the scrollbar track */
+  border-radius: 4px; /* Rounded corners for the track */
+}
