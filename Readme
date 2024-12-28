@@ -1,0 +1,108 @@
+**Documentation: Task List Application**
+
+---
+
+### **Overview**
+The Task List Application is a simple and responsive task management tool that allows users to add, toggle (mark as done/undo), and delete tasks. It is built with modern web technologies and follows best practices in design and development.
+
+---
+
+### **Technologies Used**
+- **Frontend**: ReactJS, Tailwind CSS
+- **Icons**: React-Icons
+- **Animations**: Framer Motion
+- **Backend** (Optional for persistence): Node.js, Express.js
+- **Database**: MongoDB
+- **Styling**: Tailwind CSS with custom scrollbar design
+
+---
+
+### **Features**
+1. Add new tasks via a modal with smooth animations.
+2. Toggle tasks as completed/incomplete.
+3. Delete tasks from the list.
+4. Display the most recently added tasks at the top.
+5. Responsive design with a scrollable task list (max height: 70vh).
+6. Stylish scrollbar and hover effects for better user experience.
+7. Search functionality
+
+---
+
+### **Installation Process**
+
+#### Prerequisites:
+- Node.js and npm installed.
+- MongoDB instance running (if backend is used).
+
+#### Steps:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-repo/task-list-app.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd task-list-app
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Start the development server:
+   ```bash
+   npm start
+   ```
+5. (Optional) Set up backend:
+   - Configure `.env` with MongoDB connection string.
+   - Navigate to the backend folder and start the server:
+     ```bash
+     cd backend
+     npm install
+     npm start
+     ```
+
+---
+
+### **File Structure**
+
+#### **Frontend**
+- **/src**
+  - **components/**: Contains reusable components like `TaskList`, `TaskInputModal`.
+  - **styles/**: Custom CSS files and Tailwind configurations.
+  - **App.js**: Main application logic and routing.
+
+#### **Backend (Optional)**
+- **/models/**
+  - `Task.js`: Mongoose model for task schema.
+- **/routes/**
+  - `taskRoutes.js`: API routes for managing tasks (CRUD operations).
+- **/controllers/**
+  - `taskController.js`: Logic for handling API requests.
+
+---
+
+### **Routes (Backend)**
+| Method | Endpoint          | Description              |
+|--------|-------------------|--------------------------|
+| GET    | `/tasks`      | Fetch all tasks          |
+| POST   | `/tasks`      | Add a new task           |
+| PUT    | `/tasks/:id`  | Update a task (toggle)   |
+| DELETE | `/tasks/:id`  | Delete a task            |
+
+---
+
+### **Database Model**
+**Task Schema:**
+- **title**: `String` - Title of the task (required).
+- **completed**: `Boolean` - Status of the task (default: `false`).
+- **createdAt**: `Date` - Timestamp for task creation.
+
+---
+
+### **Styling Highlights**
+- **Custom Scrollbar**: Styled using Tailwind CSS and `::-webkit-scrollbar` properties.
+- **Responsive Design**: Ensures functionality and readability across devices with maximum viewport height constraints.
+- **Button Hover Effects**: Smooth transitions using Tailwind's `hover` and `focus` utilities.
+
+---
+
+
